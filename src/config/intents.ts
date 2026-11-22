@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconRocket, IconFlagCheck, IconBulb, IconGavel, IconChecklist, IconNotebook, IconArrowsExchange, IconRuler } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -42,6 +43,14 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/vorhaben-anlegen', label: { de: 'Vorhaben anlegen', en: 'Create undertaking' }, icon: IconRocket, description: 'Ein neues Vorhaben mit Arbeitsbereich, Sichtbarkeit, Titel, Anlass und Verantwortung anlegen.' },
+  { path: '/intents/vorhaben-beenden', label: { de: 'Vorhaben beenden', en: 'Close undertaking' }, icon: IconFlagCheck, description: 'Ein Vorhaben mit Ergebnis und Abschlussgrund beenden.' },
+  { path: '/intents/erkenntnisse-erfassen', label: { de: 'Erkenntnisse erfassen', en: 'Record findings' }, icon: IconBulb, description: 'Mehrere Beiträge, Quellen, Annahmen, Fallfragen oder Einwände zu einem Vorhaben erfassen.' },
+  { path: '/intents/entscheidung-festhalten', label: { de: 'Entscheidung oder Freigabe festhalten', en: 'Record decision or approval' }, icon: IconGavel, description: 'Eine Entscheidung oder Freigabe mit Begründung, entscheidender Person und Folgen tragenden Personen festhalten.' },
+  { path: '/intents/massnahme-anlegen', label: { de: 'Maßnahme anlegen', en: 'Create action item' }, icon: IconChecklist, description: 'Eine oder mehrere Aufgaben, Mandate oder ausgeführte Aktionen zu einem Vorhaben anlegen.' },
+  { path: '/intents/erfahrung-festhalten', label: { de: 'Erfahrung festhalten', en: 'Record lesson learned' }, icon: IconNotebook, description: 'Eine Erfahrung mit Erkenntnis und Empfehlung für künftige Vorhaben festhalten.' },
+  { path: '/intents/vorhaben-zustand-wechseln', label: { de: 'Zustand wechseln', en: 'Change state' }, icon: IconArrowsExchange, description: 'Den Zustand eines Vorhabens von Entwurf zu aktiv, aktiv zu ruhend oder ruhend zu aktiv wechseln.' },
+  { path: '/intents/massstab-erfassen', label: { de: 'Maßstab oder Grenze erfassen', en: 'Record criterion or boundary' }, icon: IconRuler, description: 'Einen oder mehrere Maßstäbe, Grenzen oder Erfolgskriterien zu einem Vorhaben erfassen.' },
   // </custom:intents>
 ];
 
@@ -52,7 +61,7 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;
 
 /**
  * When the Phase-1 bundle was deployed (ISO, set by the service together with

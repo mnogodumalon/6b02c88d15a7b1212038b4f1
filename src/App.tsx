@@ -18,6 +18,15 @@ const IntentFields = lazy(() => import('@/pages/IntentFields'));
 const IntentsAdmin = lazy(() => import('@/pages/IntentsAdmin'));
 const AppMap = lazy(() => import('@/pages/AppMap'));
 // <custom:imports>
+const IntentVorhabenAnlegenPage = lazy(() => import('@/pages/intents/VorhabenAnlegenPage'));
+import { DashboardSkeleton } from '@/components/DashboardStates';
+const IntentVorhabenBeendenPage = lazy(() => import('@/pages/intents/VorhabenBeendenPage'));
+const IntentErkenntnisseErfassenPage = lazy(() => import('@/pages/intents/ErkenntnisseErfassenPage'));
+const IntentEntscheidungFesthaltenPage = lazy(() => import('@/pages/intents/EntscheidungFesthaltenPage'));
+const IntentMassnahmeAnlegenPage = lazy(() => import('@/pages/intents/MassnahmeAnlegenPage'));
+const IntentErfahrungFesthaltenPage = lazy(() => import('@/pages/intents/ErfahrungFesthaltenPage'));
+const IntentVorhabenZustandWechselnPage = lazy(() => import('@/pages/intents/VorhabenZustandWechselnPage'));
+const IntentMassstabErfassenPage = lazy(() => import('@/pages/intents/MassstabErfassenPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -95,6 +104,14 @@ export default function App() {
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 <Route path="verwaltung/oeffentliche-seiten/:slug/felder" element={<PublicPageFields />} />
                 {/* <custom:routes> */}
+                <Route path="intents/vorhaben-anlegen" element={<Suspense fallback={<DashboardSkeleton />}><IntentVorhabenAnlegenPage /></Suspense>} />
+                <Route path="intents/vorhaben-beenden" element={<Suspense fallback={<DashboardSkeleton />}><IntentVorhabenBeendenPage /></Suspense>} />
+                <Route path="intents/erkenntnisse-erfassen" element={<Suspense fallback={<DashboardSkeleton />}><IntentErkenntnisseErfassenPage /></Suspense>} />
+                <Route path="intents/entscheidung-festhalten" element={<Suspense fallback={<DashboardSkeleton />}><IntentEntscheidungFesthaltenPage /></Suspense>} />
+                <Route path="intents/massnahme-anlegen" element={<Suspense fallback={<DashboardSkeleton />}><IntentMassnahmeAnlegenPage /></Suspense>} />
+                <Route path="intents/erfahrung-festhalten" element={<Suspense fallback={<DashboardSkeleton />}><IntentErfahrungFesthaltenPage /></Suspense>} />
+                <Route path="intents/vorhaben-zustand-wechseln" element={<Suspense fallback={<DashboardSkeleton />}><IntentVorhabenZustandWechselnPage /></Suspense>} />
+                <Route path="intents/massstab-erfassen" element={<Suspense fallback={<DashboardSkeleton />}><IntentMassstabErfassenPage /></Suspense>} />
                 {/* </custom:routes> */}
                 {/* An unknown hash (a bookmark from before a rebuild renamed the
                     flows, a mistyped link) must not be a blank page. */}
