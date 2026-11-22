@@ -1,0 +1,64 @@
+{
+  "BeteiligteDialog.tsx": {
+    "beteiligter_lastname": "z. B. Müller",
+    "email": "z. B. anna.mueller@firma.de",
+    "beteiligter_firstname": "z. B. Anna",
+    "organisation": "z. B. Stadtwerke Beispielstadt",
+    "bemerkung": "Was ist wichtig zu wissen?"
+  },
+  "VorhabenDialog.tsx": {
+    "kennung": "z. B. VH-2026-001",
+    "arbeitsbereich": "z. B. Einkauf, Vertrieb",
+    "titel": "z. B. Neues Lager einrichten",
+    "anlass_herkunft": "Was war der Auslöser?",
+    "absicht": "Was soll erreicht werden?",
+    "verantwortlicher": "Wer ist verantwortlich?",
+    "vertretung": "Wer vertritt?",
+    "frist": "Bis wann soll es fertig sein?",
+    "wiedervorlage": "Wann erneut prüfen?",
+    "abschlussdatum": "Wann wurde es abgeschlossen?",
+    "ergebnis": "Was kam dabei heraus?",
+    "abschlussgrund": "Warum wurde es abgeschlossen?",
+    "erwarteter_nutzen": "Welcher Nutzen wird erwartet?"
+  },
+  "MassstaebeUndGrenzenDialog.tsx": {
+    "vorhaben": "Welches Vorhaben?",
+    "beschreibung": "Was gilt als Maßstab oder Grenze?",
+    "massstab_von": "Wer setzt den Maßstab?"
+  },
+  "ErkenntnisseDialog.tsx": {
+    "vorhaben": "Welches Vorhaben?",
+    "titel": "z. B. Kunden wünschen Export",
+    "beschreibung": "Was wurde erkannt?",
+    "herkunft": "z. B. Interview, Workshop",
+    "zustaendig": "Wer ist zuständig?",
+    "datum": "Wann wurde es erkannt?"
+  },
+  "EntscheidungenDialog.tsx": {
+    "vorhaben": "Welches Vorhaben?",
+    "gegenstand": "z. B. Budget für Umbau",
+    "begruendung": "Warum wurde so entschieden?",
+    "entscheider": "Wer entscheidet?",
+    "folgentraeger": "Wer trägt die Folgen?",
+    "datum": "Wann wurde entschieden?"
+  },
+  "MassnahmenDialog.tsx": {
+    "vorhaben": "Welches Vorhaben?",
+    "titel": "z. B. Angebot einholen",
+    "beschreibung": "Was ist zu tun?",
+    "zustaendig": "Wer ist zuständig?",
+    "beauftragt_von": "Wer beauftragt?",
+    "frist": "Bis wann ist es fällig?",
+    "ausfuehrungsdatum": "Wann wurde es ausgeführt?",
+    "ergebnis": "Was kam dabei heraus?"
+  },
+  "ErfahrungenDialog.tsx": {
+    "vorhaben": "Welches Vorhaben?",
+    "titel": "z. B. Frühe Abstimmung zahlt sich aus",
+    "beschreibung": "Was ist passiert?",
+    "erkenntnis": "Was haben wir gelernt?",
+    "datum": "Wann war das?",
+    "erfasser": "Wer erfasst die Erfahrung?",
+    "empfehlung": "Was raten wir künftig?"
+  }
+}
